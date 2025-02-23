@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    justify-content: center;
+}
+
+body {
+    background-color: #ffff;
+}
+
+#signup {
+    width: 95%;
+    min-height: 95vh;
+}
+
+.container {
+    margin: 0 6.65rem;
+    height: 95%;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 1.9rem;
+    }
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    height: auto;
+    width: 76%;
+    z-index: 9999;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23.75px 0;
+    background-color: #ffff;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul a {
+    color: #3498db;
+    font-family: "Inter-SemiBold", Helvetica;
+    padding: 19px;
+}
+
+nav .change:hover {
+    color: #11477b;
+}
+
+nav .signup {
+    border: 1px solid;
+    border-radius: 9.5px;
+    padding: 9.5px;
+    background-color: #3498db;
+    color: #ffff;
+}
+
+.signup:hover {
+    background-color: #ffff;
+    color: #3498db;
+    transition: all 0.75s;
+    outline-style: groove;
+}
+
+nav .logo {
+    width: 237.5px;
+    cursor: pointer;
+}
+
+#signup .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    height: 0%;
+    background-image: url(images/Group.png);
+    background-repeat: no-repeat;
+margin-top: 10px;
+}
+
+#signup .content form {
+    background: #EBF5FB;
+    padding: 1.9rem;
+    border-radius: 28.5px;
+    box-shadow: 0 3.8px 5.7px rgba(0, 0, 0, 0.1);
+    max-width: 513px;
+    justify-content:center;
+    overflow: hidden;
+}
+
+form:hover {
+    border: 1px solid;
+    border-color: #c6e1f3;
+    cursor: pointer;
+}
+#signup .content form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 19px;
+}
+#signup .content form img {
+    width: 95px;
+    padding: 14.25px;
+    border: 1px;
+    border-radius: 47.5px;
+    background-color: #FFFFFF6E;
+}
+
+#signup .content form h2 {
+    text-align: center;
+    margin-bottom: 1.425rem;
+    color: #11477B;
+    font-size: 32.3px;
+    line-height: 39.1px;
+    font-weight: 700;
+    font-family: "Inter-Bold", Helvetica;
+}
+
+#signup .content form h3 {
+    text-align: center;
+    margin-bottom: 2.85rem;
+    color: #11477B;
+    font-weight: 200;
+    font-size: 32.3px;
+    line-height: 39.1px;
+    font-family: "Inter-ExtraLight", Helvetica;
+}
+
+#signup .content form label {
+    display: block;
+    font-size: 13.3px;
+    line-height: 19px;
+    font-weight: 500;
+    margin: 0.475rem 0;
+    color: #374151;
+    font-family: "Roboto-Medium", Helvetica;
+}
+
+#signup .content form input[type="text"], input[type="email"], input[type="password"] {
+    width: 95%;
+    padding: 9.5px;
+    border: 1px #ffff;
+    border-radius: 14.25px;
+    margin-bottom: 0.95rem;
+    font-family: "Roboto-Medium", Helvetica;
+}
+
+.inp:focus {
+    border-color: #3498db;
+}
+
+#signup .content form button {
+    background: #11477b;
+    color: #ffff;
+    padding: 9.5px;
+    border: none;
+    border-radius: 14.25px;
+    max-width: 332.5px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 95%;
+    margin: auto;
+    display: block;
+}
+
+#signup .content form p {
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 19px;
+    color: #4B5563;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    max-width: 332.5px;
+    width: 95%;
+    margin: auto;
+    margin-top: 0.95rem;
+}
+
+#signup .content form p .login {
+    color: #11477b;
+    font-size: 13.3px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 19px;
+    font-weight: 800;
+    font-family: "Roboto-ExtraBold", Helvetica;
+}
+
+#signup .content form button:hover {
+    background: #0f3e68;
+    outline-style: groove;
+    transform: scale(1.0475);
+}
+
+.anim {
+    opacity: 0;
+    transform: translateY(28.5px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.chatbot img {
+    animation: float 2.85s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-9.5px);
+    }
+}

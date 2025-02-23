@@ -1,0 +1,75 @@
+/* body {
+  overflow: hidden;
+} */
+
+.inter-bold {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.inter-normal {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.inter-medium {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+.inter-light {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+.inter-semibold {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*////////////////////////////////////////////////*/
+  input[type="button"]:hover {
+    background: #0f3e68;
+    transform: scale(1.05); /* تكبير الزر عند التحويم */
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* إضافة ظل عند التركيز */
+  transition: all 0.3s ease;
+}
+
+#login .content form div img {
+  animation: float 3s ease-in-out infinite; /* حركة طفو */
+}
+
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}

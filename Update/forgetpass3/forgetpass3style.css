@@ -1,0 +1,26 @@
+.btn1 {
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #11477b;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 20px;
+    width: 161px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.btn1:hover {
+    text-decoration: underline;
+    color: #3498db;
+    border: 1px;
+}
+
+.inter-semibold {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }

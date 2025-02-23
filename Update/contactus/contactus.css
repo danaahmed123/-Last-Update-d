@@ -1,0 +1,15 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white; /* تأكد من أن الخلفية بيضاء لتغطية المحتوى عند التمرير */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+  }
+  .inter-semibold {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+ }

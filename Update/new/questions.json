@@ -1,0 +1,12 @@
+[
+  {
+    "question": "What is phishing?",
+    "options": ["A type of fishing", "A cyber attack", "A programming language", "A database"],
+    "correctAnswer": "A cyber attack"
+  },
+  {
+    "question": "How can you identify a phishing email?",
+    "options": ["Suspicious links", "Grammatical errors", "Unusual requests", "All of the above"],
+    "correctAnswer": "All of the above"
+  }
+]

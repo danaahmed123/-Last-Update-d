@@ -1,0 +1,74 @@
+.inter-bold {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.inter-normal {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.inter-medium {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+.inter-light {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+.inter-semibold {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: white; /* تأكد من أن الخلفية بيضاء لتغطية المحتوى عند التمرير */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+}
+
+.glass-effect {
+  background: linear-gradient(135deg, rgba(17, 71, 123, 0.8) 0%, rgba(52, 152, 219, 0.6) 100%);
+  border-radius: 15px;
+  padding: 30px;
+  backdrop-filter: blur(100px); /* تأثير التمويه */
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2); /* ظل ناعم */
+  transition: all .3s ease-in-out;
+  color: white;
+}
+
+
+
+
+
+nav.glass-effect {
+  background: rgba(255, 255, 255, 0.1); /* لون شفاف */
+  backdrop-filter: blur(0px); /* تأثير التمويه */
+  border-radius: 0px;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+
+nav.glass-effect {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+.glass-effect {
+  background: transparent !important;
+}

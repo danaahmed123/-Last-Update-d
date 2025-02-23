@@ -1,0 +1,394 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    justify-content: center;
+}
+
+body {
+    background-color: #ffff;
+    padding-top: 5em;
+}
+
+#forgetpass1 {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0 7rem;
+    height: 100%;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+.inter-semibold {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+/* nav {
+    position: fixed;
+    top: 0;
+    height: 5em;
+    width: 80%;
+    z-index: 9999;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    margin: auto;
+    background-color: #ffff;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul a {
+    color: #3498db;
+    font-family: "Inter-SemiBold", Helvetica;
+    padding: 20px;
+}
+
+nav .change:hover {
+    color: #11477b;
+} 
+
+nav .signup {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #ffff;
+} */
+
+.signup:hover {
+    background-color: #ffff;
+    color: #3498db;
+    transition: all 0.75s;
+    outline-style: groove;
+}
+
+/* nav .logo {
+    width: 250px;
+    cursor: pointer;
+}   */
+
+#forgetpass2 .content {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    /* background-color: #FCFCFCd; */
+    /* margin-bottom: 5px; */
+    margin-top: 20px;
+    /* padding-top: 5px; */
+}
+
+#forgetpass2 .content img {
+    width: 600px;
+}
+
+#forgetpass2 .content .content-text h2 {
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #11477b;
+    font-size: 44px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 45px;
+}
+
+#forgetpass2 .content .content-text p {
+    font-family: "Inter-Light", Helvetica;
+    font-weight: 300;
+    color: #3498db;
+    font-size: 44px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 45px;
+}
+
+.btn {
+    display: block;
+        width: 217px;
+        font-family: "Roboto-Bold", Helvetica;
+        font-weight: 700;
+        background-color: #11477b;
+        color: #ffff;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+        white-space: nowrap;
+        padding: 10px 85px;
+        border: 1px solid;
+        border-radius: 15px;
+        transition: all 0.5s;
+        overflow: hidden;
+        margin-bottom: 3rem;
+        margin-left: 16rem;
+        text-align: center;
+        align-items: center;
+}
+
+.btn:hover {
+    background-color: #3498db;
+    color: #ffff;
+    border: 1px solid;
+}
+
+.part1 .btn1 {
+    /* position: absolute;
+    top: 852px;
+    left: 121px; */
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #11477b;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 20px;
+    width: 161px;
+    margin-bottom: 15px;
+    margin-right: auto;
+}
+
+.btn1:hover {
+    text-decoration: underline;
+    color: #3498db;
+    border: 1px;
+}
+
+.resend {
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #4b5563;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    width: 217px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: 170px;
+}
+
+.resend1:hover {
+    text-decoration: underline;
+    color: #3498db;
+    border: 1px;
+}
+
+.resend1 {
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #11477b;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+
+}
+
+ .text1 {
+font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #11477b;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 20px;
+    width: 161px;
+    margin-bottom: 15px;
+    margin-right: auto;
+}
+
+#forgetpass2 .content {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+}
+
+#forgetpass2 .content form {
+    background: #ebf5fb;
+    padding: 15px;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* width: 100%; */
+    max-width: 476px;
+    justify-content:center;
+    overflow: hidden;
+}
+
+/* form:hover {
+    border: 1px solid;
+    border-color: #c6e1f3;
+    cursor: pointer;
+} */
+
+#forgetpass2 .content form label {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    color: #374151;
+    font-family: "Roboto-Medium", Helvetica;
+}
+
+#forgetpass2 .content .part1 form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D1D5DB;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    font-family: "Roboto-Medium", Helvetica;
+}
+
+.content .anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+.container .anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Hamburger menu styles */
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.menu-icon .bar {
+    background-color: #3498db;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+/* Default desktop navbar */
+
+/* .nav-list {
+    display: flex;
+} */
+
+/* Mobile navbar styles */
+
+@media screen and (max-width: 768px) {
+    /* nav {
+        flex-wrap: wrap;
+    } */
+
+    .menu-icon {
+        display: flex;
+    }
+
+    /* .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .nav-list li {
+        text-align: center;
+        padding: 15px 0;
+    } */
+
+    /* Show menu when checkbox is checked */
+    /* #menu-toggle:checked + .menu-icon + .nav-list {
+        display: flex;
+    } */
+}
+
+/* content responsive */
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        margin: 0 3rem;
+    }
+    
+    #forgetpass2 .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #forgetpass2 .content img {
+        max-width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    #forgetpass2 .content .content-text h2,
+    #forgetpass2 .content .content-text p {
+        font-size: 32px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+        max-width: 200px;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 1rem;
+        padding: 0 1rem;
+    }
+
+    /* nav {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    nav .logo {
+        width: 180px;
+    } */
+
+    #forgetpass2 .content .content-text h2,
+    #forgetpass2 .content .content-text p {
+        font-size: 24px;
+    }
+
+    #forgetpass2 .content img {
+        max-width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
