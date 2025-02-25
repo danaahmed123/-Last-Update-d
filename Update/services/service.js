@@ -1,16 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Function to toggle the menu
-    function toggleMenu() {
-      const menu = document.getElementById("menu");
-      menu.classList.toggle("hidden");
-      menu.classList.toggle("animate__animated");
-      menu.classList.toggle("animate__fadeInDown");
-    }
+       // تحسين القائمة المنسدلة (Hamburger Menu)
+       const menuToggle = document.getElementById('menu-toggle');
+       const navList = document.querySelector('nav ul');
+   
+       menuToggle.addEventListener('change', function () {
+           if (menuToggle.checked) {
+               navList.style.maxHeight = navList.scrollHeight + 'px';
+           } else {
+               navList.style.maxHeight = '0';
+           }
+       });
+   
   
     // Add event listener to the menu button
-    const menuButton = document.querySelector("button[onclick='toggleMenu()']");
-    if (menuButton) {
-      menuButton.addEventListener("click", toggleMenu);
-    }
+  
   });
   

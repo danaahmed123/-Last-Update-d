@@ -27,7 +27,7 @@
           </div>
           <div class="hidden md:flex">
             <ul class="text-xl text-[#11477B] flex gap-5 items-center font-semibold inter-semibold">
-              <li><a href="../hommme/home.html" class="hover:text-[#349BDB] animate__animated animate__fadeInDown ">Home</a></li>
+              <li><a href="../hommme 2/home 2.html" class="hover:text-[#349BDB] animate__animated animate__fadeInDown ">Home</a></li>
               <li><a href="../services/services.html" class="hover:text-[#349BDB] animate__animated animate__fadeInDown">Services</a></li>
               <li><a href="../contactus/contact.html" class="hover:text-[#349BDB] animate__animated animate__fadeInDown">Contact Us</a></li>
               <li><a href="../about/about.html" class="hover:text-[#349BDB] animate__animated animate__fadeInDown">About</a></li>
@@ -63,7 +63,7 @@
         </div>
         <div id="menu" class="hidden md:hidden">
           <ul class="text-xl text-[#11477B] flex flex-col gap-3 pb-4 font-semibold inter-semibold">
-            <li><a href="../hommme/home.html" class="hover:text-[#349BDB] animate__animated animate__fadeInDown">Home</a></li>
+            <li><a href="../hommme 2/home 2.html" class="hover:text-[#349BDB] animate__animated animate__fadeInDown">Home</a></li>
             <li><a href="../services/services.html" class="hover:text-[#349BDB] animate__animated animate__fadeInDown ">Services</a></li>
             <li><a href="../contactus/contact.html" class="hover:text-[#349BDB] animate__animated animate__fadeInDown">Contact Us</a></li>
             <li><a href="../about/about.html" class="hover:text-[#349BDB] animate__animated animate__fadeInDown">About</a></li>
@@ -116,16 +116,16 @@
           </div>
           <!-- الأزرار -->
           <div id="listen-control" style="margin-top: 20px;" class="flex justify-center items-center w-full">
-          <button onclick="startListening()" class="flex items-center justify-center gap-5 bg-inherit text-[#8EA1B6] border-[#8EA1B6] border-[1px] px-3 py-2 rounded-lg w-full hover:bg-[#3498DB] hover:text-white hover:border-[#3498DB] duration-200 animate__animated animate__pulse animate__infinite">
+          <button id="listen-button" onclick="startListening()" class="flex items-center justify-center gap-5 bg-inherit text-[#8EA1B6] border-[#8EA1B6] border-[1px] px-3 py-2 rounded-lg w-full hover:bg-[#3498DB] hover:text-white hover:border-[#3498DB] duration-200 animate__animated animate__pulse animate__infinite">
             <span class="font-semibold inter-semibold">Start Listening</span> <img src="imgs/listing.png" alt="" />
           </button>
           </div> 
           <div id="controls" style="margin-top: 20px;" class="flex justify-center items-center gap-2 w-full">
-            <button onclick="startRecording()" class="flex items-center justify-center gap-5 bg-inherit text-[#8EA1B6] border-[#8EA1B6] border-[1px] px-3 py-2 rounded-lg w-full hover:bg-[#3498DB] hover:text-white hover:border-[#3498DB] duration-200 animate__animated animate__pulse animate__infinite">
+            <button id="record-button" onclick="startRecording()" class="flex items-center justify-center gap-5 bg-inherit text-[#8EA1B6] border-[#8EA1B6] border-[1px] px-3 py-2 rounded-lg w-full hover:bg-[#3498DB] hover:text-white hover:border-[#3498DB] duration-200 animate__animated animate__pulse animate__infinite">
               <span class="mr-2 font-semibold inter-semibold">Start Rec</span>
               <img src="imgs/mic.png" alt="" class="content-end" />
             </button>
-            <button onclick="sendAnswers()" class="flex items-center justify-center gap-1 bg-inherit text-[#8EA1B6] border-[#8EA1B6] border-[1px] px-2 py-2 rounded-lg w-sm hover:bg-[#3498DB] hover:text-white hover:border-[#3498DB] duration-200 animate__animated animate__pulse animate__infinite">
+            <button id="send-button" onclick="sendAnswers()" class="flex items-center justify-center gap-1 bg-inherit text-[#8EA1B6] border-[#8EA1B6] border-[1px] px-2 py-2 rounded-lg w-sm hover:bg-[#3498DB] hover:text-white hover:border-[#3498DB] duration-200 animate__animated animate__pulse animate__infinite">
               <img class="pl-1" src="imgs/sent.png" alt="" />
               <span class="mr-2 font-semibold inter-semibold">Send</span>
             </button>

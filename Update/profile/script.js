@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // استدعاء بيانات المستخدم من LocalStorage
+    
     const userData = getFromLocalStorage('user');
     if (userData) {
         document.getElementById('name').value = userData.name || '';
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // تفعيل زر التعديل
     const editButton = document.querySelector('input[type="button"][value="Edit"]');
     editButton.addEventListener('click', function () {
+        console.log('تم النقر على زر التعديل');
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const phone = document.getElementById('phone').value;
@@ -23,7 +25,14 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('تم تحديث البيانات بنجاح!');
 
         // إرسال البيانات إلى Backend (معلقة حتى تحتاجها)
-        /*
+        
+
+
+
+
+
+
+
         updateProfileInBackend('https://your-backend-url.com/update-profile', updatedUserData)
             .then(response => {
                 console.log('استجابة الخادم:', response);
@@ -33,7 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.error('حدث خطأ:', error);
                 alert('حدث خطأ أثناء تحديث البيانات. يرجى المحاولة مرة أخرى.');
             });
-        */
+        
+
     });
 
     // تفعيل زر تسجيل الخروج
@@ -41,8 +51,10 @@ document.addEventListener('DOMContentLoaded', function () {
     logoutButton.addEventListener('click', function () {
         // حذف بيانات المستخدم من LocalStorage
         deleteFromLocalStorage('user');
+        deleteFromLocalStorage('login');
+
         alert('تم تسجيل الخروج بنجاح!');
-        window.location.href = '/login'; // توجيه المستخدم إلى صفحة تسجيل الدخول
+        window.location.href = '../login/login.html'; // توجيه المستخدم إلى صفحة تسجيل الدخول
 
         // إرسال طلب تسجيل الخروج إلى Backend (معلقة حتى تحتاجها)
         /*

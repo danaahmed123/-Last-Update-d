@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // تفعيل الحركات عند تحميل الصفحة
+    // Retrieve the user data from local storage
+
     const animElements = document.querySelectorAll('.anim');
     animElements.forEach((element) => {
         element.style.opacity = '0';
@@ -18,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const signupForm = document.querySelector('#signup .content form');
     signupForm.addEventListener('submit', function (event) {
         event.preventDefault(); // منع إرسال النموذج بالطريقة التقليدية
-
         // جمع بيانات النموذج
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
@@ -30,15 +31,25 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('كلمة المرور غير متطابقة!');
             return;
         }
+var storedUserJSON = localStorage.getItem("user");
+// Convert the JSON string back to an object
+var storedUser = storedUserJSON ? JSON.parse(storedUserJSON) : null;
+if (storedUser && email === storedUser.email) {
+            alert('البريد الإلكتروني موجود بالفعل!');
+            document.getElementById("email").value = '';
+            return;
+        }else{
+            const userData = { name, email, password };
 
-        const userData = { name, email, password };
+            // حفظ البيانات في LocalStorage (للتجربة)
+            saveToLocalStorage('user', userData);   
+            console.log('تم الحفظ في LocalStorage:', getFromLocalStorage('user'));
+    
+            // عرض رسالة نجاح
+            alert('تم التسجيل بنجاح!');
+            window.location.href = '../login/login.html'; // توجيه المستخدم إلى صفحة تسجيل الدخول
+        }
 
-        // حفظ البيانات في LocalStorage (للتجربة)
-        saveToLocalStorage('user', userData);
-        console.log('تم الحفظ في LocalStorage:', getFromLocalStorage('user'));
-
-        // عرض رسالة نجاح
-        alert('تم التسجيل بنجاح!');
 
         // حفظ البيانات في Backend (معلقة حتى تحتاجها)
         /*

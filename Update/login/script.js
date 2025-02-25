@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Retrieve the user data from local storage
+// Define the user object
+// var user = {
+//     password: 22168,
+//     email: "dana1@gmail.com"
+// };
+
+// // Convert the user object to a JSON string
+// var userJSON = JSON.stringify(user);
+
+// // Store the user data in local storage
+// localStorage.setItem("user", userJSON);
+
+
     // تفعيل الحركات عند تحميل الصفحة
     const animElements = document.querySelectorAll('.anim');
     animElements.forEach((element) => {
@@ -27,10 +41,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const userData = getFromLocalStorage('user');
 
         // التحقق من صحة البيانات
-        if (userData && userData.email === email && userData.password === password) {
-            alert('تم تسجيل الدخول بنجاح!');
-            window.location.href = '/dashboard'; // توجيه المستخدم إلى صفحة أخرى
-        } else {
+        if (userData && userData.email == email && userData.password == password) {
+            // alert('تم تسجيل الدخول بنجاح!');
+            window.location.href = '../hommme 2/home 2.html'; // توجيه المستخدم إلى صفحة أخرى
+            localStorage.setItem("login", "true");
+            } else {
             alert('البريد الإلكتروني أو كلمة المرور غير صحيحة!');
         }
 

@@ -92,7 +92,7 @@
                         <input class="bg-white rounded-xl border-[#11477B] w-full h-8 mb-5 text-[#11477B]" type="email" id="email" name="email" required>
 
                         <label for="name" class="text-[#11477B] block pb-2 font-medium">Phone</label>
-                        <input class="bg-white rounded-xl border-[#11477B] w-full h-8 mb-5 text-[#11477B]" type="tel" id="name" name="name" required>
+                        <input class="bg-white rounded-xl border-[#11477B] w-full h-8 mb-5 text-[#11477B]" type="tel" id="phone" name="phone" required>
 
                         <label for="gender" class="text-[#11477B] block pb-2 font-medium">Gender</label>
                         <select name="gender" id="gender" class="bg-white rounded-xl border-[#11477B] w-1/2 h-8 mb-16 text-[#11477B]">
@@ -104,20 +104,28 @@
                     </form>
                 </div>
                 <div class="bg-[#EBF5FB] flex flex-col rounded-3xl px-3 py-4 w-[336px] md:w-[336px] h-fit">
-                    <div class="pl-4 flex flex-col justify-between">
-                        <div class="pb-6 mb-20">
-                            <label  for="accepted" class="text-[#11477B] block pb-2 font-medium">Interview status</label>
-                            <button class="bg-[#56EC5933] text-[#12DA16] px-2 py-1  rounded-full font-bold w-[95px]" id="accepted" value="">
-                                Accepted</button>
-                        </div>
-
-                        <div class="pb-6">
-                            <label for="rejected" class="text-[#11477B] block pb-2 font-medium">Interview status</label>
-                            <button  class="bg-[#EC565633] text-[#DA1512] px-2 py-1 rounded-full font-bold w-[95px]" id="rejected" value="">
-                                Rejected</button>
-                        </div>
+                  <div class="pl-4 flex flex-col justify-between"></div>
+                    <div class="pb-6 mb-20"></div>
+                      <label for="status" class="text-[#11477B] block pb-2 font-medium">Interview status</label>
+                      <button id="status" class="px-2 py-1 rounded-full font-bold w-[95px]"></button>
                     </div>
+                  </div>
                 </div>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                    // Simulate a backend request
+                    const interviewStatus = 'rejected'; // Change this value to 'accepted' or 'rejected' based on backend response
+
+                    const statusButton = document.getElementById('status');
+                    if (interviewStatus === 'accepted') {
+                      statusButton.textContent = 'Accepted';
+                      statusButton.classList.add('bg-[#56EC5933]', 'text-[#12DA16]');
+                    } else {
+                      statusButton.textContent = 'Rejected';
+                      statusButton.classList.add('bg-[#EC565633]', 'text-[#DA1512]');
+                    }
+                  });
+                </script>
             </div>
             <div class="flex flex-wrap sm:flex-wrap justify-between py-8 sm:flex-row flex-col gap-6">
                 <input type="button" value="Log out" class="bg-[#11477B] text-[#ffff] px-4 py-2 cursor-pointer rounded-[16px] text-[#11477B] font-bold mx-72">

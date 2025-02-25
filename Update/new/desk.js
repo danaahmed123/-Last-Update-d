@@ -69,22 +69,28 @@ document.addEventListener('DOMContentLoaded', function () {
         subOptions.classList.remove("hidden");
       }
     });
-  // تفعيل زر "Submit"
-  const submitButton = document.querySelector('#submit-button');
-  submitButton.addEventListener('click', () => {
-    let targetUrl = '../new/interview.html'; // صفحة المقابلة العامة
-    if (selectedPath) {
-      targetUrl += `?path=${selectedPath}`;
-      if (selectedPath === 'pen-test' && selectedSubPath) {
-        targetUrl += `&subPath=${selectedSubPath}`;
+
+    // تفعيل زر "Submit"
+    const submitButton = document.querySelector('#submit-button');
+    submitButton.addEventListener('click', () => {
+      let targetUrl = '../new/interview.html'; // صفحة المقابلة العامة
+      if (selectedPath) {
+        if (selectedPath === 'pen-test' && !selectedSubPath) {
+          alert('Please select a sub-path for Penetration Testing.');
+          return;
+        }
+        targetUrl += `?path=${selectedPath}`;
+        if (selectedPath === 'pen-test' && selectedSubPath) {
+          targetUrl += `&subPath=${selectedSubPath}`;
+        }
+      } else {
+        alert('Please select a path.');
+        return;
       }
-    } else {
-      alert('Please select a path.');
-      return;
-    }
-    window.location.href = targetUrl;
-  });
+      window.location.href = targetUrl;
+    });
   } catch (error) {
     console.error('Error:', error);
   }
 });
+

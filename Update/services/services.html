@@ -27,12 +27,6 @@
             transition: transform 0.3s ease-in-out;
         }
     </style>
-    <script>
-      function toggleMenu() {
-        const menu = document.getElementById("menu");
-        menu.classList.toggle("hidden");
-      }
-    </script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-white">
@@ -47,7 +41,7 @@
           </div>
           <div class="hidden md:flex">
             <ul class="text-xl text-[#11477B] flex gap-5 items-center font-semibold inter-semibold">
-              <li><a href="../hommme/home.html" class="hover:text-[#11477B] animate__animated animate__fadeInDown">Home</a></li>
+              <li><a href="../hommme 2/home 2.html" class="hover:text-[#11477B] animate__animated animate__fadeInDown">Home</a></li>
                   <li><a href="../services/services.html" class="hover:text-[#11477B] animate__animated animate__fadeInDown">Services</a></li>
                   <li><a href="../contactus/contact.html" class="hover:text-[#11477B] animate__animated animate__fadeInDown">Contact Us</a></li>
                   <li><a href="../about/about.html" class="hover:text-[#11477B] animate__animated animate__fadeInDown">About</a></li>
@@ -73,7 +67,6 @@
               >
                 <path
                   stroke-linecap="round"
-                  stroke-linejoin="round"
                   stroke-width="2"
                   d="M4 6h16M4 12h16m-7 6h7"
                 ></path>
@@ -83,7 +76,7 @@
         </div>
         <div id="menu" class="hidden md:hidden">
           <ul class="text-xl text-[#11477B] flex flex-col gap-3 pb-4 font-semibold inter-semibold">
-            <li><a href="../hommme/home.html" class="hover:text-[#11477B] animate__animated animate__fadeInDown">Home</a></li>
+            <li><a href="../hommme 2/home 2.html" class="hover:text-[#11477B] animate__animated animate__fadeInDown">Home</a></li>
                   <li><a href="../services/services.html" class="hover:text-[#11477B] animate__animated animate__fadeInDown">Services</a></li>
                   <li><a href="../contactus/contact.html" class="hover:text-[#11477B] animate__animated animate__fadeInDown">Contact Us</a></li>
                   <li><a href="../about/about.html" class="hover:text-[#11477B] animate__animated animate__fadeInDown">About</a></li>
@@ -169,4 +162,30 @@
     </div>
     <script src="service.js"></script>
 </body>
-</html>
+</html>    <script>
+        // Check if the user is logged in
+        function checkLogin() {
+            const isLoggedIn = localStorage.getItem('login');
+            if (isLoggedIn !== 'true') {
+                // Redirect to login page if not logged in
+                window.location.href = "../login/login.html";
+            } else {
+                // If logged in, allow the page to render
+                document.body.style.display = 'block';  
+                
+            }
+        }
+
+        // Hide the body initially
+        document.body.style.display = 'none';
+
+        // Call the checkLogin function when the page loads
+        window.onload = checkLogin;
+
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
+    <script src="service.js"></script>
+</body>

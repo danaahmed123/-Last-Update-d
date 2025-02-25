@@ -23,6 +23,7 @@
             Dashboard
           </h2>
           <button
+          id="logoutBtn"
             class="bg-[#3498DB] text-white px-4 py-2 rounded-md font-semibold md:w-full md:max-w-[163px] w-[100px] cursor-pointer"
           >
             Log out
@@ -47,24 +48,28 @@
          <div class="p-5  bg-white rounded-[26px] mt-5">
           <nav class=" space-y-4">
             <button
-              class="w-full text-center px-4 py-2 rounded-[20px] text-[#3498DB] hover:bg-[#11477B] hover:text-white hover:border-[#11477B] duration-200 transition-all cursor-pointer border border-[#3498DB]"
-            >
-              candidates
-            </button>
+        class="w-full text-center px-4 py-2 rounded-[20px] text-[#3498DB] hover:bg-[#11477B] hover:text-white hover:border-[#11477B] duration-200 transition-all cursor-pointer border border-[#3498DB]"
+        id="candidatesBtn"
+    >
+        Candidates
+    </button>
+            
+    <button
+    class="w-full text-center px-4 py-2 rounded-[20px] text-white bg-[#11477B] hover:text-white duration-200 transition-all cursor-pointer border border-[#11477B]"
+    id="interviewBtn"
+>
+    Interview
+</button>
+<button
+class="w-full text-center px-4 py-2 rounded-[20px] text-[#3498DB] hover:bg-[#11477B] hover:text-white hover:border-[#11477B] duration-200 transition-all cursor-pointer border border-[#3498DB]"
+id="phishingBtn"
+>
+Phishing
+</button>
             <button
-              class="w-full text-center px-4 py-2 rounded-[20px] text-white bg-[#11477B] hover:text-white duration-200 transition-all cursor-pointer border border-[#11477B]"
-            >
-              interview
-            </button>
-            <button
               class="w-full text-center px-4 py-2 rounded-[20px] text-[#3498DB] hover:bg-[#11477B] hover:text-white hover:border-[#11477B] duration-200 transition-all cursor-pointer border border-[#3498DB]"
-            >
-              phising
-            </button>
-            <button
-              class="w-full text-center px-4 py-2 rounded-[20px] text-[#3498DB] hover:bg-[#11477B] hover:text-white hover:border-[#11477B] duration-200 transition-all cursor-pointer border border-[#3498DB]"
-            >
-              messages
+            id ="messagesBtn"
+             > messages
             </button>
           </nav>
 
@@ -252,5 +257,6 @@
         </div>
       </div>
     </div>
+    <script src="dash5.js"></script>
   </body>
 </html>
